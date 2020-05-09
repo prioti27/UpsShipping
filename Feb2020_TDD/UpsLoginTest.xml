@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UpsLoginTestSuite" thread-count="2" parallel="tests">
+	
+	<test name="UpsLoginChromeTest">
+		<parameter name="browser" value="Chrome" />
+			<classes>
+				<class name="pack.UpsTest.UpsLoginTest" />
+			</classes>
+	</test> <!-- Test -->
+
+	<test name="UpsLoginFirefoxTest">
+		<parameter name="browser" value="Firefox" />
+			<classes>
+				<class name="pack.UpsTest.UpsLoginTest" />
+			</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->

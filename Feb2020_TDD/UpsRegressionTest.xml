@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UpsRegressionTestSuite">
+
+	<test name="UpsRegressionTest">
+	<parameter name="browser" value="Chrome" />
+		<groups>
+			<run>
+				<include name="regressionTest" />
+			</run>
+		</groups>
+		<classes>
+			<class name="pack.UpsTest.UpsLoginTest" />
+			<class name="pack.UpsTest.UpsShippingTest" />
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
